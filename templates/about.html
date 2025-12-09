@@ -1,0 +1,672 @@
+{% extends "base.html" %}
+
+{% block title %}About Us - FaceCount Pro{% endblock %}
+
+{% block content %}
+<section class="about-hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>About FaceCount Pro</h1>
+            <p class="subtitle">Revolutionizing face detection with cutting-edge computer vision technology</p>
+        </div>
+    </div>
+</section>
+
+<section class="about-content">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>Our Mission</h2>
+                <p>At FaceCount Pro, we're dedicated to making advanced face detection technology accessible to everyone. Our mission is to provide reliable, fast, and accurate face detection solutions that empower developers, researchers, and businesses to build innovative applications without compromising on performance or privacy.</p>
+                
+                <h3>Advanced Technology Stack</h3>
+                <p>FaceCount Pro leverages the power of OpenCV and Haar Cascade classifiers, enhanced with our proprietary optimizations for superior performance. Our system processes images in real-time, delivering accurate face detection results with industry-leading speed and precision.</p>
+                
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="tech-content">
+                            <h4>Machine Learning</h4>
+                            <p>Advanced algorithms trained on diverse datasets for robust face detection across various conditions</p>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="tech-content">
+                            <h4>Real-time Processing</h4>
+                            <p>Optimized for speed with processing times under 50ms for most images and video streams</p>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="tech-content">
+                            <h4>Privacy First</h4>
+                            <p>All processing happens locally - your data never leaves your device or server</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>How Our Technology Works</h3>
+                <p>Our face detection system employs a multi-stage approach:</p>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <span class="step-number">1</span>
+                        <div class="step-content">
+                            <h5>Image Preprocessing</h5>
+                            <p>Images are converted to grayscale and enhanced using histogram equalization for optimal feature detection</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <span class="step-number">2</span>
+                        <div class="step-content">
+                            <h5>Feature Detection</h5>
+                            <p>Haar-like features are used to identify facial patterns at multiple scales and positions</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <span class="step-number">3</span>
+                        <div class="step-content">
+                            <h5>Cascade Classification</h5>
+                            <p>A cascade of classifiers progressively filters out non-face regions with increasing complexity</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <span class="step-number">4</span>
+                        <div class="step-content">
+                            <h5>Result Optimization</h5>
+                            <p>Detected faces are analyzed for confidence scores and optimized for accuracy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-visual">
+                <div class="visual-card">
+                    <div class="stats-showcase">
+                        <div class="stat-highlight">
+                            <div class="stat-number">99.2%</div>
+                            <div class="stat-desc">Detection Accuracy</div>
+                        </div>
+                        <div class="stat-highlight">
+                            <div class="stat-number">50ms</div>
+                            <div class="stat-desc">Average Processing Time</div>
+                        </div>
+                        <div class="stat-highlight">
+                            <div class="stat-number">10K+</div>
+                            <div class="stat-desc">Images Processed Daily</div>
+                        </div>
+                        <div class="stat-highlight">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-desc">Service Availability</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="team-values">
+    <div class="container">
+        <h2>Our Values</h2>
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Innovation</h3>
+                <p>We continuously push the boundaries of what's possible in computer vision, constantly improving our algorithms and exploring new technologies to stay at the forefront of face detection.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Accessibility</h3>
+                <p>We believe advanced technology should be available to everyone. That's why we've created an intuitive interface that makes powerful face detection accessible to users of all skill levels.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3>Privacy & Security</h3>
+                <p>Your privacy is our priority. All face detection processing happens locally, ensuring your images and data remain secure and never leave your control.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>User-Focused</h3>
+                <p>Every feature we build is designed with our users in mind. We prioritize ease of use, performance, and reliability in everything we create.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="use-cases">
+    <div class="container">
+        <h2>Applications & Use Cases</h2>
+        <div class="use-cases-grid">
+            <div class="use-case-card">
+                <div class="use-case-icon">
+                    <i class="fas fa-user-plus"></i>
+                </div>
+                <h4>Attendance Systems</h4>
+                <p>Automated face recognition for employee or student attendance tracking with real-time counting and reporting.</p>
+            </div>
+            <div class="use-case-card">
+                <div class="use-case-icon">
+                    <i class="fas fa-camera-security"></i>
+                </div>
+                <h4>Security & Surveillance</h4>
+                <p>Real-time monitoring and people counting for enhanced security in public spaces and private facilities.</p>
+            </div>
+            <div class="use-case-card">
+                <div class="use-case-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h4>Retail Analytics</h4>
+                <p>Customer counting and demographic analysis for retail stores to optimize staffing and store layouts.</p>
+            </div>
+            <div class="use-case-card">
+                <div class="use-case-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h4>Education & Research</h4>
+                <p>Academic research and computer vision projects requiring reliable face detection capabilities.</p>
+            </div>
+            <div class="use-case-card">
+                <div class="use-case-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h4>Mobile Applications</h4>
+                <p>Integration into mobile apps for photo organization, social media features, and augmented reality.</p>
+            </div>
+            <div class="use-case-card">
+                <div class="use-case-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h4>Content Creation</h4>
+                <p>Automated face detection for video editing, photo management, and content moderation applications.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="technology-deep-dive">
+    <div class="container">
+        <h2>Technical Excellence</h2>
+        <div class="tech-specs">
+            <div class="spec-category">
+                <h3>Performance Metrics</h3>
+                <ul class="spec-list">
+                    <li><strong>Detection Speed:</strong> 30-50ms per image</li>
+                    <li><strong>Accuracy Rate:</strong> 99.2% on standard datasets</li>
+                    <li><strong>Multiple Faces:</strong> Up to 50 faces per image</li>
+                    <li><strong>Image Formats:</strong> JPG, PNG, BMP, WebP</li>
+                    <li><strong>Max Resolution:</strong> 4K UHD supported</li>
+                </ul>
+            </div>
+            <div class="spec-category">
+                <h3>Technical Features</h3>
+                <ul class="spec-list">
+                    <li>Real-time webcam processing</li>
+                    <li>Adjustable detection parameters</li>
+                    <li>Confidence scoring for each detection</li>
+                    <li>Multi-scale detection capability</li>
+                    <li>Optimized for various lighting conditions</li>
+                </ul>
+            </div>
+            <div class="spec-category">
+                <h3>Compatibility</h3>
+                <ul class="spec-list">
+                    <li>All modern web browsers</li>
+                    <li>Desktop and mobile devices</li>
+                    <li>RESTful API endpoints</li>
+                    <li>Cross-platform support</li>
+                    <li>No external dependencies required</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.about-hero {
+    background: var(--gradient-hero);
+    color: var(--pure-white);
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" opacity="0.1"><circle fill="white" cx="200" cy="200" r="150"/><circle fill="white" cx="800" cy="300" r="100"/><circle fill="white" cx="400" cy="600" r="120"/></svg>');
+    background-size: cover;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    position: relative;
+    z-index: 1;
+}
+
+.about-hero .subtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    line-height: 1.6;
+}
+
+.about-content {
+    padding: 5rem 0;
+    background: var(--pure-white);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+    font-weight: 700;
+}
+
+.about-text h3 {
+    font-size: 1.75rem;
+    margin: 2.5rem 0 1rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.tech-stack {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.tech-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: var(--light-gray);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--medium-gray);
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: translateX(8px);
+    border-color: var(--primary-blue);
+    box-shadow: var(--shadow);
+}
+
+.tech-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--pure-white);
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.tech-content h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.tech-content p {
+    margin: 0;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.process-steps {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.process-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: var(--light-gray);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--primary-blue);
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--gradient-primary);
+    color: var(--pure-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+    font-size: 1.1rem;
+}
+
+.step-content h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.step-content p {
+    margin: 0;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.about-visual {
+    position: sticky;
+    top: 100px;
+}
+
+.visual-card {
+    background: var(--light-gray);
+    padding: 2.5rem;
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--medium-gray);
+    box-shadow: var(--shadow);
+}
+
+.stats-showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.stat-highlight {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--pure-white);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--medium-gray);
+    transition: all 0.3s ease;
+}
+
+.stat-highlight:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary-blue);
+    box-shadow: var(--shadow);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+}
+
+.stat-desc {
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.team-values {
+    padding: 5rem 0;
+    background: var(--light-gray);
+}
+
+.team-values h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+    font-weight: 700;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.value-card {
+    background: var(--pure-white);
+    padding: 2.5rem 2rem;
+    border-radius: var(--radius-xl);
+    text-align: center;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--medium-gray);
+    transition: all 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-blue);
+}
+
+.value-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: var(--pure-white);
+    font-size: 2rem;
+}
+
+.value-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.value-card p {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.use-cases {
+    padding: 5rem 0;
+    background: var(--pure-white);
+}
+
+.use-cases h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+    font-weight: 700;
+}
+
+.use-cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.use-case-card {
+    background: var(--light-gray);
+    padding: 2.5rem 2rem;
+    border-radius: var(--radius-xl);
+    text-align: center;
+    border: 1px solid var(--medium-gray);
+    transition: all 0.3s ease;
+}
+
+.use-case-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary-blue);
+    box-shadow: var(--shadow-lg);
+}
+
+.use-case-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: var(--pure-white);
+    font-size: 1.75rem;
+}
+
+.use-case-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.use-case-card p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.technology-deep-dive {
+    padding: 5rem 0;
+    background: var(--light-gray);
+}
+
+.technology-deep-dive h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+    font-weight: 700;
+}
+
+.tech-specs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.spec-category {
+    background: var(--pure-white);
+    padding: 2.5rem 2rem;
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--medium-gray);
+}
+
+.spec-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-blue);
+}
+
+.spec-list {
+    list-style: none;
+    padding: 0;
+}
+
+.spec-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--medium-gray);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.spec-list li:last-child {
+    border-bottom: none;
+}
+
+.spec-list li strong {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .about-visual {
+        position: static;
+    }
+    
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about-text h2 {
+        font-size: 2rem;
+    }
+    
+    .about-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    .tech-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .process-step {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .values-grid,
+    .use-cases-grid,
+    .tech-specs {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+{% endblock %}

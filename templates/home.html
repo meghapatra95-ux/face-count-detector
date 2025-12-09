@@ -1,0 +1,406 @@
+{% extends "base.html" %}
+
+{% block title %}Home - FaceCount Pro | Advanced AI Face Detection{% endblock %}
+
+{% block content %}
+<!-- Enhanced Hero Section -->
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1>Intelligent Face Detection Powered by AI</h1>
+            <p>Experience enterprise-grade facial recognition technology with unparalleled accuracy and real-time processing. Transform how you detect and analyze faces with our cutting-edge AI solutions.</p>
+            <div class="hero-buttons">
+                <a href="{{ url_for('detection') }}" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Launch Live Demo
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    <i class="fas fa-chart-line"></i>
+                    Explore Features
+                </a>
+                <a href="#technology" class="btn btn-secondary">
+                    <i class="fas fa-code"></i>
+                    View API Docs
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="stat-number">99.7%</span>
+                    <span class="stat-label">Accuracy</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-number">&lt;50ms</span>
+                    <span class="stat-label">Processing</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Uptime</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="visual-container">
+                <div class="face-grid">
+                    <div class="face-circle" data-tooltip="Real-time Detection"></div>
+                    <div class="face-circle" data-tooltip="High Accuracy"></div>
+                    <div class="face-circle" data-tooltip="Multi-Face Support"></div>
+                    <div class="face-circle" data-tooltip="AI Powered"></div>
+                </div>
+                <div class="floating-elements">
+                    <div class="floating-element element-1">👁️</div>
+                    <div class="floating-element element-2">🤖</div>
+                    <div class="floating-element element-3">⚡</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Trusted By Section -->
+<section class="trusted-by">
+    <div class="container">
+        <div class="trusted-by-content">
+            <p class="trusted-label">Trusted by industry leaders</p>
+            <div class="company-logos">
+                <div class="company-logo">TechCorp</div>
+                <div class="company-logo">InnovateLabs</div>
+                <div class="company-logo">DataSystems</div>
+                <div class="company-logo">VisionAI</div>
+                <div class="company-logo">SecureTech</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Enhanced Features Section -->
+<section id="features" class="features">
+    <div class="container">
+        <div class="section-header">
+            <h2>Enterprise-Grade Face Detection Solutions</h2>
+            <p class="section-subtitle">Powered by advanced machine learning algorithms and optimized for performance across all use cases. Our technology delivers unmatched accuracy and reliability.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>AI-Powered Analysis</h3>
+                <p>Leverage deep neural networks trained on millions of images for superior face detection accuracy with real-time processing and adaptive learning capabilities.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Deep Learning Models</li>
+                    <li><i class="fas fa-check"></i> Real-time Processing</li>
+                    <li><i class="fas fa-check"></i> Adaptive Algorithms</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Lightning Fast Processing</h3>
+                <p>Optimized algorithms deliver sub-50ms processing times with GPU acceleration and multi-threaded performance for high-volume applications.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> GPU Acceleration</li>
+                    <li><i class="fas fa-check"></i> Multi-threaded</li>
+                    <li><i class="fas fa-check"></i> High Volume Ready</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Privacy-First Architecture</h3>
+                <p>On-device processing ensures your data never leaves your system, with enterprise-grade security protocols and compliance with global privacy standards.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> On-Device Processing</li>
+                    <li><i class="fas fa-check"></i> GDPR Compliant</li>
+                    <li><i class="fas fa-check"></i> End-to-End Encryption</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-expand"></i>
+                </div>
+                <h3>Scalable Solutions</h3>
+                <p>From single images to batch processing thousands of images simultaneously, our technology scales to meet your demands with consistent performance.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Batch Processing</li>
+                    <li><i class="fas fa-check"></i> Auto Scaling</li>
+                    <li><i class="fas fa-check"></i> Load Balancing</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <h3>Advanced Analytics</h3>
+                <p>Comprehensive reporting and analytics with detailed insights into detection patterns, performance metrics, and operational intelligence.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Real-time Dashboards</li>
+                    <li><i class="fas fa-check"></i> Performance Metrics</li>
+                    <li><i class="fas fa-check"></i> Custom Reports</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Developer Friendly</h3>
+                <p>RESTful APIs, comprehensive documentation, and SDKs for seamless integration into your applications across multiple platforms.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> REST API</li>
+                    <li><i class="fas fa-check"></i> SDK Libraries</li>
+                    <li><i class="fas fa-check"></i> Webhooks</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Use Cases Section -->
+<section class="use-cases">
+    <div class="container">
+        <div class="section-header">
+            <h2>Powering Innovation Across Industries</h2>
+            <p class="section-subtitle">Discover how leading companies leverage our face detection technology to transform their operations and deliver exceptional user experiences.</p>
+        </div>
+        <div class="use-cases-grid">
+            <div class="use-case-card">
+                <div class="use-case-icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <h4>Security & Surveillance</h4>
+                <p>Real-time face detection for access control systems, security monitoring, and threat detection with instant alerts.</p>
+                <div class="use-case-stats">
+                    <span>98.5% Accuracy</span>
+                    <span>24/7 Monitoring</span>
+                </div>
+            </div>
+            <div class="use-case-card">
+                <div class="use-case-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h4>Retail Analytics</h4>
+                <p>Customer behavior analysis, demographic insights, and personalized shopping experiences through face detection.</p>
+                <div class="use-case-stats">
+                    <span>Real-time Insights</span>
+                    <span>Customer Analytics</span>
+                </div>
+            </div>
+            <div class="use-case-card">
+                <div class="use-case-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h4>Mobile Applications</h4>
+                <p>Seamless user authentication, photo organization, and augmented reality experiences on mobile devices.</p>
+                <div class="use-case-stats">
+                    <span>Cross-Platform</span>
+                    <span>Low Latency</span>
+                </div>
+            </div>
+            <div class="use-case-card">
+                <div class="use-case-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h4>Education Technology</h4>
+                <p>Automated attendance systems, student engagement tracking, and secure exam proctoring solutions.</p>
+                <div class="use-case-stats">
+                    <span>Automated Systems</span>
+                    <span>Secure Platforms</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Enhanced Stats Section -->
+<section class="stats">
+    <div class="container">
+        <div class="section-header">
+            <h2>Proven Performance Metrics</h2>
+            <p class="section-subtitle">Trusted by industry leaders worldwide with consistent, reliable performance across millions of detections.</p>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">99.7%</div>
+                <div class="stat-label">Detection Accuracy Rate</div>
+                <p class="stat-description">Across diverse lighting conditions and angles</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">32ms</div>
+                <div class="stat-label">Average Processing Time</div>
+                <p class="stat-description">Per image with GPU acceleration</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">25M+</div>
+                <div class="stat-label">Images Processed Daily</div>
+                <p class="stat-description">Across global infrastructure</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">99.9%</div>
+                <div class="stat-label">Service Uptime</div>
+                <p class="stat-description">Guaranteed reliability</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technology Stack Section -->
+<section id="technology" class="technology">
+    <div class="container">
+        <div class="section-header">
+            <h2>Built with Cutting-Edge Technology</h2>
+            <p class="section-subtitle">Harnessing the latest advancements in computer vision, machine learning, and cloud computing for optimal performance.</p>
+        </div>
+        <div class="technology-grid">
+            <div class="tech-card">
+                <div class="tech-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Machine Learning</h3>
+                <p>Advanced neural networks trained on millions of images for superior face detection capabilities across diverse scenarios.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">TensorFlow</span>
+                    <span class="tech-tag">PyTorch</span>
+                    <span class="tech-tag">CNN</span>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h3>Computer Vision</h3>
+                <p>State-of-the-art vision algorithms optimized for real-time face detection, feature extraction, and analysis.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">OpenCV</span>
+                    <span class="tech-tag">Dlib</span>
+                    <span class="tech-tag">Haar Cascade</span>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <h3>Cloud Infrastructure</h3>
+                <p>Scalable cloud-native architecture with containerized solutions and global CDN for optimal performance.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Kubernetes</span>
+                    <span class="tech-tag">AWS</span>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3>Security Framework</h3>
+                <p>Enterprise-grade security with end-to-end encryption, secure APIs, and compliance with global standards.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">SSL/TLS</span>
+                    <span class="tech-tag">OAuth 2.0</span>
+                    <span class="tech-tag">GDPR</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Integration Section -->
+<section class="integration">
+    <div class="container">
+        <div class="integration-content">
+            <div class="integration-text">
+                <h2>Seamless Integration</h2>
+                <p>Get started in minutes with our comprehensive documentation, SDKs, and developer tools. Whether you're building a mobile app, web application, or enterprise system, we've got you covered.</p>
+                <div class="integration-features">
+                    <div class="integration-feature">
+                        <i class="fas fa-plug"></i>
+                        <span>RESTful API</span>
+                    </div>
+                    <div class="integration-feature">
+                        <i class="fas fa-mobile"></i>
+                        <span>Mobile SDKs</span>
+                    </div>
+                    <div class="integration-feature">
+                        <i class="fas fa-desktop"></i>
+                        <span>Web Components</span>
+                    </div>
+                    <div class="integration-feature">
+                        <i class="fas fa-book"></i>
+                        <span>Full Documentation</span>
+                    </div>
+                </div>
+                <div class="integration-buttons">
+                    <a href="#" class="btn btn-primary">
+                        <i class="fas fa-book"></i>
+                        View Documentation
+                    </a>
+                    <a href="#" class="btn btn-secondary">
+                        <i class="fas fa-download"></i>
+                        Download SDK
+                    </a>
+                </div>
+            </div>
+            <div class="integration-visual">
+                <div class="code-snippet">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span>Python Example</span>
+                    </div>
+                    <pre><code>import facecountpro
+
+# Initialize client
+client = facecountpro.Client(api_key='your_key')
+
+# Detect faces in image
+result = client.detect_faces(
+    image='path/to/image.jpg',
+    confidence_threshold=0.9
+)
+
+print(f"Found {result.face_count} faces")
+for face in result.faces:
+    print(f"Face at {face.location}")</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Face Detection Capabilities?</h2>
+            <p>Join thousands of developers and enterprises who trust FaceCount Pro for their critical face detection needs. Start with our free tier today.</p>
+            <div class="cta-buttons">
+                <a href="{{ url_for('detection') }}" class="btn btn-primary btn-large">
+                    <i class="fas fa-play-circle"></i>
+                    Start Free Trial
+                </a>
+                <a href="{{ url_for('contact') }}" class="btn btn-secondary">
+                    <i class="fas fa-comment"></i>
+                    Contact Sales
+                </a>
+            </div>
+            <div class="cta-features">
+                <div class="cta-feature">
+                    <i class="fas fa-check"></i>
+                    <span>No credit card required</span>
+                </div>
+                <div class="cta-feature">
+                    <i class="fas fa-check"></i>
+                    <span>Free 10,000 detections/month</span>
+                </div>
+                <div class="cta-feature">
+                    <i class="fas fa-check"></i>
+                    <span>Full API access</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
